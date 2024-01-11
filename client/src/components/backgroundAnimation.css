@@ -1,0 +1,86 @@
+
+.lines{
+    fill: #84777f18 !important;
+}
+
+.line {
+    fill: #7a1868ae !important;
+    z-index: 100;
+    border-radius: 5rem;
+}
+
+.canvas-cyberlines .light {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #5c102c;
+}
+
+/* .animateds {
+  animation: descend1 3s infinite;
+}
+
+@keyframes descend1 {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(1000px);
+  }
+} */
+
+.decentLine1 {
+  animation: descend 15s linear infinite;
+  border-radius: 100%;
+}
+.decentLine2 {
+  animation: descend 13s linear infinite;
+  border-radius: 100%;
+}
+
+
+@keyframes descend {
+  0% {
+    transform: translateY(-100%);
+  }
+  64% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  64.2%, 65.2% {
+    transform: translateY(-100%);
+  }
+  66% {
+    opacity: 100%;
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+
+.decentLine3 {
+  animation: descend3 8s linear infinite;
+  border-radius: 100%;
+}
+
+
+@keyframes descend3 {
+  0% {
+    transform: translateY(100%);
+  }
+  64% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  64.2%, 65.2% {
+    transform: translateY(100%);
+  }
+  66% {
+    opacity: 100%;
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

@@ -1,0 +1,99 @@
+@keyframes rotate-and-wait {
+    /* Permanece en 0 grados durante los primeros 10 segundos (10 / 40 = 0.25 o 25%) */
+    0%, 25% { transform: rotate(0deg); }
+  
+    /* Gira a 360 grados en los siguientes 5 segundos (15 / 40 = 0.375 o 37.5%) */
+    37.5% { transform: rotate(360deg); }
+  
+    /* Permanece en 360 grados durante 10 segundos más (25 / 40 = 0.625 o 62.5%) */
+    62.5% { transform: rotate(360deg); }
+  
+    /* Vuelve a 0 grados en los siguientes 5 segundos (30 / 40 = 0.75 o 75%) */
+    75% { transform: rotate(0deg); }
+  
+    /* Espera otros 10 segundos en 0 grados antes de comenzar de nuevo */
+    100% { transform: rotate(0deg); }
+  }
+  
+  .rotate {
+    /* La animación completa toma 40 segundos */
+    animation: rotate-and-wait 40s linear infinite;
+  }
+  
+ @keyframes cancelRotate {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(-360deg);
+      }
+  }
+ .cancelRotate {
+    animation: cancelRotate 40s linear infinite;
+ }
+
+ @keyframes translateToRight {
+    0%, 100% {
+      transform: translatex(30px);
+    }
+    50% {
+      transform: translatex(0px); 
+    }
+  }
+  
+  
+  .translateToRight {
+    animation: translateToRight 0.5s infinite;
+  }
+
+  @keyframes translateToLeft {
+    0%, 100% {
+      transform: translatex(-30px);
+    }
+    50% {
+      transform: translatex(0px); 
+    }
+  }
+  
+  .translateToLeft {
+    animation: translateToLeft 0.5s infinite;
+  }
+
+  @keyframes translateToTop {
+    0%, 100% {
+      transform: translateY(-30px);
+    }
+    50% {
+      transform: translateY(0px); 
+    }
+  }
+  
+  .translateToTop {
+    animation: translateToTop 0.5s infinite;
+  }
+
+  @keyframes translateToBottom {
+    0%, 100% {
+      transform: translateY(30px);
+    }
+    50% {
+      transform: translateY(0px); 
+    }
+  }
+  
+  .translateToBottom {
+    animation: translateToBottom 0.5s infinite;
+  }
+
+  @keyframes moveToBottom {
+    0%, 100% {
+      transform: translateY(30px);
+    }
+    50% {
+      transform: translateY(0px); 
+    }
+  }
+  
+  .moveToBottom {
+    animation: moveToBottom 0.5s infinite;
+  }
