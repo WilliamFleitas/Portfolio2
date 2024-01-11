@@ -35,7 +35,7 @@ const Resume = () => {
       company: "Brunson Insurance",
       place: "USA - Florida",
       description:
-      i18n.language === "en" ? "Led the refactoring of a web application for one of the company's products, including the integration of new functionalities." : "Lidere la refactorización de una aplicación web para uno de los productos de la empresa, incluyendo la integración de nuevas funcionalidades.",
+      i18n.language === "en" ? "Led the refactoring of a web application for one of the client products, including the integration of new functionalities." : "Lidere la refactorización de una aplicación web para uno de los productos del cliente, incluyendo la integración de nuevas funcionalidades.",
       id: 1,
       technologies: [
         "TypeScript",
