@@ -102,7 +102,7 @@ const Works = () => {
             >
               <div draggable="false" className={`object-contain h-auto w-full transition duration-500 ${hovered === index ? "scale-105" : ""}`}>
 
-              <ImageLoader src={item.miniature}/>
+              <ImageLoader src={item.miniature} alt={`${item.title} miniature`}/>
               </div>
               <strong
                 

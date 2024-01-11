@@ -21,7 +21,7 @@ const ImageLoader: React.FC<ImageLoaderTypeProps> = ({ src, alt }) => {
       draggable="false"
       className="transition duration-500"
         src={src}
-        alt={alt}
+        alt={alt }
         onLoad={handleImageLoad}
         style={{ display: loading ? "none" : "block" }}
       />

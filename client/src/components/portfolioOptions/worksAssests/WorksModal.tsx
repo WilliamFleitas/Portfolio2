@@ -165,6 +165,7 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
         draggable="false"
           className="transition duration-500 object-cover rounded-t-md isolate"
           src={workData.miniature}
+          alt={`${workData.title} main image`}
           onLoad={handleImageLoad}
           style={{ display: loading ? "none" : "block" }}
         />
@@ -253,6 +254,7 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
                 <img draggable="false"
                   className="rounded-md object-cover h-auto w-full"
                   src={image}
+                  alt={`${workData.title} image demo`}
                 />
               </div>
             ))}

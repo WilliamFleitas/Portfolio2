@@ -17,14 +17,14 @@ const ProfileCard = () => {
         <img
           className="hidden md:flex object-cover w-full h-full flex-col md:max-h-[65vh]"
           src={MerryPP}
-          alt="Profile Card Background"
+          alt="Going Merry Background"
           draggable="false"
         />
 
         <img
           className="md:hidden min-h-[30vh] max-h-[30vh] w-full md:w-fit md:min-w-[30vw] md:max-w-[30vw] md:min-h-[55vh] md:max-h-[55vh] object-cover md:object-cover "
           src={MerryFullPP}
-          alt="Profile Card Background"
+          alt="Going Merry Background"
           draggable="false"
         />
       </div>
@@ -34,15 +34,11 @@ const ProfileCard = () => {
         draggable="false"
       >
         <div 
-        // style={{
-        //     boxShadow: `12px 8px 4px 0 #8A61B1`
-        //   }} 
           className="absolute top-[-90px] md:-top-28 w-full h-full  max-w-[150px] max-h-[150px] z-50 border-[3px] border-[#1F1E1E] rounded-full">
           <img
-          
             className="flex object-cover w-full h-full rounded-full flex-col max-w-[250px] max-h-[150px]"
             src={MeuProfile}
-            alt="Profile Card Background"
+            alt="William Cabrera Profile"
             draggable="false"
           />
         </div>
