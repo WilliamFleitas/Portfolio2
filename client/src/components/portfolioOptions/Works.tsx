@@ -14,7 +14,7 @@ const worksData = [
     title: "Trade Social Network",
     value: "wallStIntel",
     miniDescription:
-      "Development of a Single Page Application (SPA) for web-based trading, utilizing React framework.",
+      "Development of a Single Page Application (SPA) for web-based trading, utilizing React library.",
     id: 0,
     company: "Wall St Intel",
   },
@@ -28,7 +28,7 @@ const worksData = [
     title: "Dashboard panel",
     value: "brunsonInsurance",
     miniDescription:
-      "Led the refactoring of a web application for one of the company's products, including the integration of new functionalities.",
+      "up",
     id: 1,
   },
   {
@@ -41,7 +41,7 @@ const worksData = [
     color: "rgba(186, 146, 152)",
     value: "laCarretaPosada",
     miniDescription:
-      "Led the refactoring of a web application for one of the company's products, including the integration of new functionalities.",
+      "up.",
     id: 2,
   },
   {
@@ -54,7 +54,7 @@ const worksData = [
     company: "Personal Project",
     value: "clockIA_APP",
     miniDescription:
-      "Led the refactoring of a web application for one of the company's products, including the integration of new functionalities.",
+      "up.",
     id: 3,
   },
 ];

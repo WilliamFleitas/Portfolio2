@@ -45,8 +45,8 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
       value: "wallStIntel",
       miniDescription:
         i18n.language === "en"
-          ? "Development of a Single Page Application (SPA) for web-based trading, utilizing React framework."
-          : "Desarrollo de una Aplicación de Página Única (SPA) para Trading, utilizando el framework React.",
+          ? "Development of a Single Page Application (SPA) for web-based trading, utilizing React library."
+          : "Desarrollo de una Aplicación de Página Única (SPA) para Trading, utilizando la libreria React.",
       description:
         i18n.language === "en"
           ? "Developed React interfaces with TypeScript and Tailwind, integrating Asynchronous Redux Toolkit for robust state management. Developed a user-centric experience and interface that efficiently fetch analytical data, format it, and seamlessly transmit it to React components. Implemented charts and tables to provide users with an intuitive and visually appealing representation. Implemented List virtualization for efficient rendering of large data sets, resulting in a 15% performance enhancement for components utilizing lists. Ensured accessible and responsive interfaces for optimal user experience. Collaboratively worked with the backend team to design data structures for 5+ products, enabling seamless integration. Designed scalable code architecture through reusable components for enhanced efficiency."

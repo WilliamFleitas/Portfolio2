@@ -14,7 +14,7 @@ const Resume = () => {
       company: "Wall ST Intel",
       place: "USA - Florida",
       description: i18n.language === "en" ?
-        "Development of a Single Page Application (SPA) for web-based trading, utilizing React framework." : "Desarrollo de una Aplicación de Página Única (SPA) para Trading, utilizando el framework React.",
+        "Development of a Single Page Application (SPA) for web-based trading, utilizing React library." : "Desarrollo de una Aplicación de Página Única (SPA) para Trading, utilizando la libreria React.",
       id: 0,
       technologies: [
         "TypeScript",
