@@ -5,7 +5,9 @@ import MerryFullPP from "../assets/MerryFullPP.jpg";
 import { VscGithub } from "react-icons/vsc";
 import { FaLinkedinIn } from "react-icons/fa";
 import TypeWriter from "../utils/TypeWriter";
+import { useTranslation } from "react-i18next";
 const ProfileCard = () => {
+  const { i18n } = useTranslation();
   return (
     <div
       style={{
@@ -78,7 +80,7 @@ const ProfileCard = () => {
           <a
             className="hover:text-primaryButtonColor transition duration-700"
             draggable="false"
-            href="https://drive.google.com/file/d/1fdy330T5q-XaUQz6_CbYqciM4Vks_Fk5/view?usp=sharing"
+            href={i18n.language === "en" ? "https://docs.google.com/document/d/1fdy330T5q-XaUQz6_CbYqciM4Vks_Fk5/edit?usp=sharing&ouid=118393274526664722618&rtpof=true&sd=true" : "https://docs.google.com/document/d/1zRZAfrmJRN2P8ns9MDrk2IZlo6EwSJzm/edit?usp=sharing&ouid=118393274526664722618&rtpof=true&sd=true"}
             target="_blank"
             title="Download CV"
           >
