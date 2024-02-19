@@ -66,7 +66,7 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
       miniature:
         "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2FSin_titulo%20(1)%20(1).png?alt=media&token=f6b6bb5c-c383-4dda-8fae-1dfdb41b2094",
       company: "Brunson Insurance",
-      title: "Dashboard panel",
+      title: "Dashboard",
       value: "brunsonInsurance",
       miniDescription:
         i18n.language === "en"
