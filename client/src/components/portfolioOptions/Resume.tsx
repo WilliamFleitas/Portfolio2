@@ -9,7 +9,7 @@ const Resume = () => {
 
   const jobsData = [
     {
-      date:i18n.language === "en" ? "April 2023 - December 2023": "Abril 2023 - Diciembre 2023",
+      date:i18n.language === "en" ? "April 2023 - January 2024": "Abril 2023 - Enero 2024",
       jobTitle: "Frontend Web Developer",
       company: "Wall ST Intel",
       place: "USA - Florida",

@@ -80,7 +80,7 @@ const ProfileCard = () => {
           <a
             className="hover:text-primaryButtonColor transition duration-700"
             draggable="false"
-            href={i18n.language === "en" ? "https://docs.google.com/document/d/1fdy330T5q-XaUQz6_CbYqciM4Vks_Fk5/edit?usp=sharing&ouid=118393274526664722618&rtpof=true&sd=true" : "https://docs.google.com/document/d/1zRZAfrmJRN2P8ns9MDrk2IZlo6EwSJzm/edit?usp=sharing&ouid=118393274526664722618&rtpof=true&sd=true"}
+            href={i18n.language === "en" ? "https://drive.google.com/file/d/1c7PzlVi-gs2voq9WL8InX27RRkbeUu0A/view" : "https://drive.google.com/file/d/1RiSTuteLBxRRKwa77R4I4hpK4V7-CVi0/view"}
             target="_blank"
             title="Download CV"
           >

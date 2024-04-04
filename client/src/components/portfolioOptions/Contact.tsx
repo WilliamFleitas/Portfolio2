@@ -3,7 +3,7 @@ import {FaLinkedinIn} from "react-icons/fa";
 import { FaRegIdCard } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 const Contact = () => {
-  const { t } = useTranslation(['contact']);
+  const { t,i18n } = useTranslation(['contact']);
   return (
     <div className="flex flex-col text-start items-center justify-center bg-white dark:bg-secondaryBgColor text-black dark:text-white overflow-hidden w-full h-screen md:h-full shadow-md  isolate  py-0 pt-3 lg:pt-0">
       <article className="  w-full h-full flex flex-col text-start  items-start justify-start  max-h-[95%] overflow-y-scroll pb-10 no-scrollbar">
@@ -91,7 +91,7 @@ const Contact = () => {
              <VscGithub className="w-10 h-10 " />
              <strong >Github</strong>
              </a>
-             <a draggable="false" className="flex flex-col text-center items-center justify-center gap-2  select-none hover:text-primaryButtonColor transition duration-700" href="https://drive.google.com/file/d/1fdy330T5q-XaUQz6_CbYqciM4Vks_Fk5/view?usp=sharing" target="_blank">
+             <a draggable="false" className="flex flex-col text-center items-center justify-center gap-2  select-none hover:text-primaryButtonColor transition duration-700" href={i18n.language === "en" ? "https://drive.google.com/file/d/1c7PzlVi-gs2voq9WL8InX27RRkbeUu0A/view" : "https://drive.google.com/file/d/1RiSTuteLBxRRKwa77R4I4hpK4V7-CVi0/view"} target="_blank">
              <FaRegIdCard className="w-10 h-10 " />
              <strong >{t("downloadCV")}</strong>
              </a>

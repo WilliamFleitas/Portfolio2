@@ -29,10 +29,11 @@ const Skills = () => {
               </div>
               <div className="flex flex-col w-full text-center items-center justify-center text-[18px]  py-2 gap-1">
                 <small>CSS</small>
-                <small>HTML</small>
-                <small>Redux</small>
                 <small>React</small>
+                <small>NextJs</small>
                 <small>Tailwind</small>
+                <small>SvelteKit</small>
+                <small>React Native</small>
                 <small>Redux Toolkit</small>
               </div>
             </section>
@@ -44,6 +45,7 @@ const Skills = () => {
                 <small>Express</small>
                 <small>Node.js</small>
                 <small>MongoDB</small>
+                <small>Firebase</small>
                 <small>Mongoose</small>
                 <small>Sequelize</small>
                 <small>PostgreSQL</small>
