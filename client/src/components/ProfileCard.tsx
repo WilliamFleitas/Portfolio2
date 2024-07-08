@@ -17,7 +17,7 @@ const ProfileCard = () => {
     >
       <div className=" w-full h-full    md:min-h-[45vh] md:max-h-[45vh] ">
         <img
-          className="hidden md:flex object-cover w-full h-full flex-col md:max-h-[65vh]"
+          className="hidden md:flex object-cover w-full h-full flex-col md:max-h-[65vh] lg:min-h-[65vh] lg:max-h-[65vh] "
           src={MerryPP}
           alt="Going Merry Background"
           draggable="false"

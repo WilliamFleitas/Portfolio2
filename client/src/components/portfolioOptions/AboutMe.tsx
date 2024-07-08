@@ -30,7 +30,7 @@ const AboutMe = () => {
             <strong className="gradient-title-line min-w-[25%] text-[15px] ">
               <span className="font-bold">{t("age")}</span>
             </strong>
-            <small className="text-[15px]">26</small>
+            <small className="text-[15px]">27</small>
           </section>
           <span className="gradient-line-span  w-[100%] flex flex-col items-center justify-center text-center h-[1px] my-2  rounded-[10%]"></span>
           <section className="flex flex-row text-start justify-between w-full h-fit items-center ">

@@ -39,8 +39,8 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
         "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2FwallStDemo.mp4?alt=media&token=3ef3c881-cea5-4e28-9c22-b9280e61e541",
       date:
         i18n.language === "en"
-          ? "April 2023 - January 2024"
-          : "Abril 2023 - Enero 2024",
+          ? "April 2023 - Present"
+          : "Abril 2023 - Presente",
       title: "Trade Social Network",
       value: "wallStIntel",
       miniDescription:
