@@ -1,5 +1,4 @@
 import { IoPersonSharp } from "react-icons/io5";
-import { MdOutlineContactPhone } from "react-icons/md";
 import { BsPersonVcard } from "react-icons/bs";
 import { AiFillFolderOpen } from "react-icons/ai";
 import { MdOutlineLanguage, MdDarkMode, MdOutlineLightMode } from "react-icons/md";
