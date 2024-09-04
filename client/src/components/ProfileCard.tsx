@@ -185,8 +185,8 @@ const ProfileCard = () => {
               draggable='false'
               href={
                 i18n.language === 'en'
-                  ? 'https://drive.google.com/file/d/1c7PzlVi-gs2voq9WL8InX27RRkbeUu0A/view'
-                  : 'https://drive.google.com/file/d/1RiSTuteLBxRRKwa77R4I4hpK4V7-CVi0/view'
+                  ? 'https://docs.google.com/document/d/1dZvwhU_T1395QhTI1RkWFEqG0YpkFcOE/edit?usp=sharing&ouid=118393274526664722618&rtpof=true&sd=true'
+                  : 'https://docs.google.com/document/d/1TqkVJvtDbDhZY8cyHhtbPcosETIp8ahQ/edit?usp=sharing&ouid=118393274526664722618&rtpof=true&sd=true'
               }
               target='_blank'
               title='Download CV'
