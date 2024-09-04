@@ -25,6 +25,14 @@
   scrollbar-width: none;  /* Firefox */
 }
 
+@keyframes expandBar {
+  from {
+    width: 0;
+  }
+  to {
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

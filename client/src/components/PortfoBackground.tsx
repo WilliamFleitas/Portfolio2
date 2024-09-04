@@ -1,7 +1,7 @@
 import "./backgroundAnimation.css";
 const PortfoBackground = () => {
   return (
-    <div className="w-full  h-full overflow-hidden bg-white dark:bg-black">
+    <div className="w-full  h-full overflow-hidden bg-white dark:bg-[#171616] ">
       <svg
       className="h-screen w-screen"
         id="cyberlines"

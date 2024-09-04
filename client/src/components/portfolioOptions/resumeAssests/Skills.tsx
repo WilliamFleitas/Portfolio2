@@ -32,7 +32,6 @@ const Skills = () => {
                 <small>React</small>
                 <small>NextJs</small>
                 <small>Tailwind</small>
-                <small>SvelteKit</small>
                 <small>React Native</small>
                 <small>Redux Toolkit</small>
               </div>
@@ -45,7 +44,6 @@ const Skills = () => {
                 <small>Express</small>
                 <small>Node.js</small>
                 <small>MongoDB</small>
-                <small>Firebase</small>
                 <small>Mongoose</small>
                 <small>Sequelize</small>
                 <small>PostgreSQL</small>

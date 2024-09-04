@@ -17,14 +17,14 @@ const AboutMe = () => {
         {t("aboutMe")}
         </h2>
       </header>
-      <section className="fh:grid fh:grid-cols-2 w-full px-4   gap-2 relative">
-        <div className="flex flex-col w-full h-full text-start items-start justify-start py-4 pr-4 gap-1 ">
+      <section className="flex flex-col sm:grid sm:grid-cols-2 w-full px-4   gap-2 relative">
+        <div className="flex flex-col w-full h-full text-start items-start justify-start py-4 pl-4 sm:pl-0 pr-4 gap-1 ">
           <strong className=" font-bold ">{t("greeting")}</strong>
           <p>
           {t("greetingDescription")}
           </p>
         </div>
-        <span className="hidden fh:flex bg-gradient-custom absolute left-[50%] h-[100%] w-[1px]  flex-col items-center justify-center text-center rounded-[10%]"></span>
+        <span className="hidden sm:flex bg-gradient-custom absolute left-[50%] h-[100%] w-[1px]  flex-col items-center justify-center text-center rounded-[10%]"></span>
         <div className="flex flex-col w-full h-full text-start items-center justify-center p-4 ">
           <section className="flex flex-row text-start justify-between w-full h-fit items-center ">
             <strong className="gradient-title-line min-w-[25%] text-[15px] ">

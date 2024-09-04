@@ -27,7 +27,7 @@ const Typewriter: React.FC<TypewriterProps> = ({ words, typingSpeed = 100, rever
   }, [subIndex, index, reverse, words, typingSpeed,reverseSpeed ]);
 
   return (
-    <div className="typewriter-effect h-6 min-h-6 m-0 text-primaryButtonColor text-start items-center justify-center flex flex-col">
+    <div className="typewriter-effect h-6 min-h-6 m-0 text-primaryButtonColor text-start items-center justify-center flex flex-col text-[1.2rem]">
       <span className='h-6 min-h-6'>{words[index].substring(0, subIndex)}</span>
     </div>
   );

@@ -7,20 +7,18 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import useWindowSize from "../utils/useWindowsSize";
 
 const NavBar = () => {
   const location = useLocation();
-  const {width} = useWindowSize();
   const path = location.pathname.split("/").splice(2);
-  const [currentPath, setCurrentPath] = useState<string>("aboutMe");
+  const [currentPath, setCurrentPath] = useState<string>("aboutme");
   const [theme, setTheme] = useState<string>("dark");
   const {i18n} = useTranslation();
   const navData = [
     {
       label: i18n.language === 'en' ? 'About Me' : 'Sobre mi',
-      value: "aboutMe",
-      link: "/portfolio/aboutMe",
+      value: "aboutme",
+      link: "/portfolio/aboutme",
       Icon: IoPersonSharp,
     },
     {
@@ -35,12 +33,6 @@ const NavBar = () => {
       link: "/portfolio/works",
       Icon: AiFillFolderOpen,
     },
-    {
-      label: i18n.language === 'en' ? 'Contact' : 'Contacto',
-      value: "contact",
-      link: "/portfolio/contact",
-      Icon: MdOutlineContactPhone,
-    },
   ];
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -51,7 +43,7 @@ const NavBar = () => {
   };
   useEffect(() => {
     if (path.length === 0) {
-      setCurrentPath("aboutMe");
+      setCurrentPath("aboutme");
     } else {
       setCurrentPath(path[0]);
     }
@@ -64,8 +56,8 @@ const NavBar = () => {
     }
   }, [theme]);
   return (
-    <nav className="fh:gap-4 md:gap-10 text-start  items-center md:justify-between lg:justify-start flex flex-row lg:flex-col sm:px-6 lg:px-4    w-full lg:w-fit">
-      <section className="flex flex-row fh:w-1/2 lg:flex-col sm:w-full h-fit text-start items-center justify-center px-2 fh:px-6 sm:px-0 gap-4  lg:p-4 lg:bg-opacity-[55%]  lg:bg-zinc-600 lg:dark:bg-[#171616] md:rounded-md border-r sm:border-0">
+    <nav className="text-start  items-center justify-start flex flex-row w-full text-black dark:text-white bg-white dark:bg-[#131212] xl:dark:bg-[#121212f5] xl:border-b border-zinc-700 overflow-hidden">
+      <section className="flex flex-row text-start items-center justify-center py-3 px-6 gap-2 ssm:gap-10 border-r border-zinc-700 w-fit md:min-w-[20rem]">
         <button
           className="text-primaryMainColor hover:text-primaryMainHoverColor transition duration-500 relative"
           type="button"
@@ -73,7 +65,7 @@ const NavBar = () => {
           onClick={handleChangeLanguage}
         >
           {<MdOutlineLanguage className="w-6 h-6 " />}
-          <strong className="absolute bottom-0 right-0 font-extrabold  text-purple-200 ">{i18n.language === "en" ? "en" : "es"}</strong>
+          <strong className="absolute bottom-0 right-0 font-extrabold  text-purple-500 ">{i18n.language === "en" ? "en" : "es"}</strong>
         </button>
 
         <button
@@ -90,25 +82,20 @@ const NavBar = () => {
           
         </button>
       </section>
-      <section className="flex flex-row px-1 lg:flex-col w-full  lg:w-fit h-full lg:h-fit text-start items-center justify-between lg:justify-center sh:px-4 sm:px-0 fh:gap-4 lg:py-3  lg:p-3 lg:bg-opacity-[55%] lg:bg-zinc-600 lg:dark:bg-[#171616] lg:rounded-md transition duration-700">
+      <section className="flex flex-row text-start items-center justify-around md:justify-between py-3 px-4 md:px-32 gap-2 sm:gap-10 w-full">
         {navData?.map((item, index) => (
           <Link
             to={item.link}
-            className={`lg:text-zinc-200 h-full lg:h-fit sm:w-full lg:w-fit lg:dark:text-zinc-400 lg:border flex flex-row gap-2 text-center items-center justify-cebnter px-2 fh:px-4   py-2 lg:py-2 lg:gap-0 transition duration-700     lg:rounded-full lg:p-2 whitespace-nowrap ${
-              currentPath === item.value && width >= 1024
-                ? "gradient-top-line-section-selected lg:border-primaryMainHoverColor  "
-                : width >= 1024 && "gradient-top-line-section lg:border-zinc-400 lg:dark:border-zinc-800 "
-            }  ${
-              currentPath === item.value && width <= 1024
-                ? "gradient-top-line-section-selected lg:border-primaryMainHoverColor "
-                : width <= 1024 && "hover:bg-zinc-700 "
-            }`}
+            className={`h-fit w-fit  border hover:text-primaryMainHoverColor hover:border-primaryMainHoverColor flex flex-row text-center items-center justify-center px-2 py-2 gap-0 transition duration-300  rounded-full whitespace-nowrap ${
+              currentPath === item.value 
+                ? "gradient-top-line-section-selected border-primaryMainHoverColor text-primaryMainHoverColor"
+                : "gradient-top-line-section  border-zinc-800 text-zinc-500"
+            }  `}
             key={index}
             type="button"
             title={item.label}
           >
-            <item.Icon className="w-4 h-4 " />
-            <span className=" lg:hidden hidden  sm:flex h-full text-center items-center justify-start">{item.label}</span>
+            <item.Icon className="w-5 h-5 " />
           </Link>
         ))}
       </section>

@@ -13,7 +13,7 @@ export default {
         primaryMainColor: "#4b4a4b",
         primaryMainHoverColor: "#9333ea",
         primaryBgColor: "#313031",
-        secondaryBgColor: "#27252696",
+        secondaryBgColor: "#121212f5",
         primaryButtonColor: "#c084fc"
       },
       backgroundImage: {
@@ -26,17 +26,17 @@ export default {
       'ssm': '550px',
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
-
+      'smd' : "768px",
       'md': '950px',
       // => @media (min-width: 768px) { ... }
 
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1200px',
+      'xl': '1300px',
       // => @media (min-width: 1280px) { ... }
-
-      '2xl': '1536px',
+      'xxl': '1350px',
+      '2xl': '1668px',
       // => @media (min-width: 1536px) { ... }
     }
   },

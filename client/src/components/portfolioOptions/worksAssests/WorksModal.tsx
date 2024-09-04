@@ -148,7 +148,7 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
   };
   return (
     <article
-      className={`rounded-md isolate flex flex-col w-full text-start items-center justify-start gap-4 text-black dark:text-white`}
+      className={`sm:rounded-md isolate flex flex-col w-full text-start items-center justify-start gap-4 text-black dark:text-white`}
     >
       <div
         style={{
@@ -163,7 +163,7 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
         )}
         <img
         draggable="false"
-          className="transition duration-500 object-cover rounded-t-md isolate"
+          className="transition duration-500 object-cover sm:rounded-t-md isolate"
           src={workData.miniature}
           alt={`${workData.title} main image`}
           onLoad={handleImageLoad}
