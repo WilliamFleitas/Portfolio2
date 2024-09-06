@@ -86,7 +86,7 @@ const Works = ({ type = 'normalView' }: WorksTypeProps) => {
     <div
       className={`flex flex-col  text-start items-center justify-center bg-white dark:bg-[#121212f5] text-black dark:text-white overflow-hidden w-full  shadow-md  isolate select-none ${
         type === TYPE_VIEW_OPTIONS.normalView
-          ? 'h-screen md:h-full  py-0 pt-3 lg:pt-0'
+          ? 'smd:h-screen md:h-full  py-0 pt-3 lg:pt-0'
           : 'pt-2 fh:rounded-xl'
       }`}
     >

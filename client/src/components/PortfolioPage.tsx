@@ -21,7 +21,7 @@ const PortfolioLayout = () => {
     }
   }, [location.pathname])
   return (
-    <div className='relative flex flex-col xl:flex-row w-full h-screen  text-start items-center justify-start overflow-y-scroll xl:overflow-hidden no-scrollbar'>
+    <div className={`relative flex flex-col xl:flex-row w-full   text-start items-center justify-start smd:overflow-y-scroll xl:overflow-hidden no-scrollbar ${quickView === false ? "smd:h-screen":"h-fit smd:h-screen"}`}>
       <aside className='relative flex flex-row w-full h-fit xl:h-screen xl:min-w-[33%] xl:max-w-[33%]'>
         <ProfileCard />
       </aside>

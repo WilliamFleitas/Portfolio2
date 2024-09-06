@@ -99,8 +99,8 @@ const QuickView = () => {
               <Experience type='firstView' />
             </article>
           </div>
-          <div className='h-full w-full fh:rounded-xl smd:overfloy-y-scroll overflow-x-hidden isolate no-scrollbar border-y fh:border-x border-purple-400 '>
-            <article className='w-full h-full smd:h-fit  text-start items-center justify-start gap-y-4 flex flex-col flex-grow  z-40 select-none bg-white dark:bg-[#121212f5] pt-4 pb-6 smd:pb-2 px-4  smd:overflow-y-hidden overflow-x-hidden fh:rounded-xl isolate no-scrollbar '>
+          <div className='h-full w-full fh:rounded-xl smd:overfloy-y-scroll smd:overflow-x-hidden isolate no-scrollbar border-y fh:border-x border-purple-400 '>
+            <article className='w-full h-fit  text-start items-center justify-start gap-y-4 flex flex-col smd:flex-grow  z-40 select-none bg-white dark:bg-[#121212f5] pt-4 pb-6 smd:pb-2 px-4  smd:overflow-y-hidden overflow-x-hidden fh:rounded-xl isolate no-scrollbar '>
               <div className='flex flex-col w-full h-fit '>
                 <header className='flex  flex-col w-full h-fit'>
                   <label className='flex flex-row text-start items-start justify-start  font-bold text-[25px] h-fit w-full gradient-title-line gap-1'>
