@@ -27,20 +27,20 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
       link: "fakelink.com",
       state: "Seed",
       miniature:
-        "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2FMacbook%20(2).png?alt=media&token=26f7501b-af4a-4610-8603-9978a7271bb9",
+        "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2FMacbook%20(2)%20(1).png?alt=media&token=ddfd7e0c-f26e-450e-bef5-e3abc2e475bb",
       color: "rgba(11, 57, 65)",
       images: [
-        "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2Fwall%2FSin%20t%C3%ADtulo.png?alt=media&token=22de6355-59ff-446a-bf7e-c8151859e26d",
-        "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2Fwall%2F9dbf691d-aa42-4c47-92b6-01d37219e1bd.png?alt=media&token=960b2157-e162-45d6-a566-ed9863b6ffeb",
-        "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2Fwall%2Fdfdfdf.png?alt=media&token=940b6937-d6da-4957-a778-2e6d4bcdd61b",
-        "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2Fwall%2Feadff149-abb5-4311-8204-214b528f6de1.png?alt=media&token=131d52d2-9c2e-4969-839b-066cbcaceb38",
+        "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2Fwall%2FCaptura%20de%20pantalla%202024-11-06%20075239.png?alt=media&token=2976799c-bc9b-4fc9-9d5d-a4b523142b35",
+        "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2Fwall%2FwallJournalTabletScreen.png?alt=media&token=d112cfea-b5c4-4cea-a999-e68bca8514b5",
+        "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2Fwall%2FMobileScreenwalljournal.png?alt=media&token=caa0d786-d60b-4413-98fa-c20a78c3f1ff",
+        "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2Fwall%2FwallJournalDesktopScreen.png?alt=media&token=d88c409b-1f63-4e6f-a761-ab3d62be6ae5",
       ],
       video:
-        "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2FwallStDemo.mp4?alt=media&token=3ef3c881-cea5-4e28-9c22-b9280e61e541",
+        "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2Fwalldemoproy2.mp4?alt=media&token=2ecc5ea1-33b1-42f2-90ad-cccad40e80c6",
       date:
         i18n.language === "en"
-          ? "April 2023 - Present"
-          : "Abril 2023 - Presente",
+          ? "April 2023 - Oct 2024"
+          : "Abril 2023 - Oct 2024",
       title: "Trade Social Network",
       value: "wallStIntel",
       miniDescription:
@@ -148,7 +148,7 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
   };
   return (
     <article
-      className={`sm:rounded-md isolate flex flex-col w-full text-start items-center justify-start gap-4 text-black dark:text-white`}
+      className={`sm:rounded-md isolate flex flex-col w-full text-start items-center justify-start gap-4 text-black dark:text-white pb-10`}
     >
       <div
         style={{
@@ -158,7 +158,7 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
       >
         {loading && (
           <div className="min-h-[300px] flex flex-col text-start items-center justify-center">
-            <div className="transition duration-500 animate-spin rounded-full h-14 w-14 m-8  border-t-2 border-b-2 border-purple-500"></div>
+            <div className="transition duration-500 animate-spin rounded-full h-14 w-14 m-8  border-t-2 border-b-2 border-primaryButtonColor"></div>
           </div>
         )}
         <img
@@ -241,6 +241,23 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
         <div className="px-4">
           <p>{workData.miniDescription}</p>
         </div>
+
+
+        {workData.video ? (
+          <div className="flex flex-col w-full py-4 px-4 rounded-md">
+            <video
+              style={{
+                boxShadow: `0 3px 4px 0 ${bgColor}`,
+              }}
+              className="rounded-md"
+              src={workData.video}
+              controls
+            />
+          </div>
+        ) : (
+          <></>
+        )}
+
         {workData.images ? (
           <div className="flex flex-row flex-wrap text-start items-center justify-center md:justify-between gap-4 w-full py-4 px-4 rounded-md">
             {workData.images?.map((image, index) => (
@@ -263,20 +280,6 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
           <></>
         )}
 
-        {workData.video ? (
-          <div className="flex flex-col w-full py-4 px-4 rounded-md">
-            <video
-              style={{
-                boxShadow: `0 3px 4px 0 ${bgColor}`,
-              }}
-              className="rounded-md"
-              src={workData.video}
-              controls
-            />
-          </div>
-        ) : (
-          <></>
-        )}
 
         <div className="px-4">
           <p>{workData.description}</p>

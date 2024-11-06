@@ -11,10 +11,10 @@ export default {
       },
       colors: {
         primaryMainColor: "#4b4a4b",
-        primaryMainHoverColor: "#9333ea",
+        primaryMainHoverColor: "#0F2028",
         primaryBgColor: "#313031",
         secondaryBgColor: "#121212f5",
-        primaryButtonColor: "#c084fc"
+        primaryButtonColor: "#2c99bb"
       },
       backgroundImage: {
         'gradient-custom': "linear-gradient(to bottom, transparent 0%, transparent 0%, #4b4a4b 0%, transparent 90%, transparent 100%)",

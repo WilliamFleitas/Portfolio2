@@ -63,13 +63,13 @@ const ProfileCard = () => {
       </div>
 
       <div
-        className={`absolute inset-x-0 bg-white dark:bg-[#171616] top-0 left-1/2 transform -translate-x-1/2  flex flex-col text-start items-center justify-center  z-50 dark:text-white text-black w-fit hover:min-w-fit hover:min-h-fit hover:rounded-b-md hover:border-2 hover:border-[#c084fc] hover:border-t-0 `}
+        className={`absolute inset-x-0 bg-white dark:bg-[#171616] top-0 left-1/2 transform -translate-x-1/2  flex flex-col text-start items-center justify-center  z-50 dark:text-white text-black w-fit hover:min-w-fit hover:min-h-fit hover:rounded-b-md hover:border-2 hover:border-primaryButtonColor hover:border-t-0 `}
         onMouseEnter={() => setCustomNavHover(true)}
         onMouseLeave={() => setCustomNavHover(false)}
       >
         {!customNavHover ? (
-          <div className='absolute border-2 border-[#c084fc] hover:border-[#6e4c90] border-t-0 top-0 bg-white dark:bg-[#171616] w-10 h-4 rounded-b-md flex flex-col text-center items-center justify-center'>
-            <TiArrowSortedDown className='w-6 h-5 text-[#c084fc]' />
+          <div className='absolute border-2 border-primaryButtonColor  border-t-0 top-0 bg-white dark:bg-[#171616] w-10 h-4 rounded-b-md flex flex-col text-center items-center justify-center'>
+            <TiArrowSortedDown className='w-6 h-5 text-primaryButtonColor' />
           </div>
         ) : (
           <div className='flex flex-row text-start items-center justify-start w-fit h-fit px-6 '>
@@ -77,19 +77,19 @@ const ProfileCard = () => {
               {quickView ? (
                 <>
                   <button
-                    className='text-primaryMainColor hover:text-primaryMainHoverColor transition duration-500 relative'
+                    className='text-primaryMainColor  transition duration-500 relative'
                     type='button'
                     title={i18n.language === 'en' ? 'Language' : 'Idioma'}
                     onClick={handleChangeLanguage}
                   >
                     {<MdOutlineLanguage className='w-6 h-6 ' />}
-                    <strong className='absolute bottom-0 right-0 font-extrabold  text-purple-500 '>
+                    <strong className='absolute bottom-0 right-0 font-extrabold  text-primaryButtonColor '>
                       {i18n.language === 'en' ? 'en' : 'es'}
                     </strong>
                   </button>
 
                   <button
-                    className='text-primaryMainColor hover:text-primaryMainHoverColor transition duration-500 '
+                    className='text-primaryMainColor hover:text-primaryButtonColor transition duration-500 '
                     type='button'
                     title={theme === 'dark' ? 'Light' : 'Dark'}
                     onClick={handleThemeSwitch}
@@ -107,7 +107,7 @@ const ProfileCard = () => {
               )}
 
               <button
-                className='text-primaryMainColor hover:text-primaryMainHoverColor transition duration-500 relative flex xl:hidden'
+                className='text-primaryMainColor hover:text-primaryButtonColor transition duration-500 relative flex xl:hidden'
                 type='button'
                 onClick={() => setContactSwitch(!contactSwitch)}
               >
@@ -119,7 +119,7 @@ const ProfileCard = () => {
               </button>
               <Link
                 to={`/portfolio/${!quickView ? 'quickview' : 'aboutme'}`}
-                className='text-primaryMainColor leading-0 pt-[0.1rem] h-fit m-0 p-0 pb-0 mb-0 hover:text-primaryMainHoverColor transition duration-500'
+                className='text-primaryMainColor leading-0 pt-[0.1rem] h-fit m-0 p-0 pb-0 mb-0 hover:text-primaryButtonColor transition duration-500'
               >
                 <strong className=' whitespace-nowrap'>{!quickView ? 'Quick View' : 'Normal View'}</strong>
               </Link>
@@ -216,7 +216,7 @@ const ProfileCard = () => {
             <div className='flex flex-col 2xl:flex-row text-start 2xl:items-center justify-between  w-full gap-x-2 gap-y-2'>
               <dt
                 style={{
-                  background: `linear-gradient(to right, transparent 0%, transparent 0%, #c084fc -10%, transparent 80%,     transparent 100%)`
+                  background: `linear-gradient(to right, transparent 0%, transparent 0%, #2c99bb -10%, transparent 80%,     transparent 100%)`
                 }}
                 className='text-[15px] '
               >
@@ -231,7 +231,7 @@ const ProfileCard = () => {
             <div className='flex flex-col 2xl:flex-row text-start 2xl:items-center justify-between  w-full gap-x-2 gap-y-2'>
               <dt
                 style={{
-                  background: `linear-gradient(to right, transparent 0%, transparent 0%, #c084fc -10%, transparent 80%,     transparent 100%)`
+                  background: `linear-gradient(to right, transparent 0%, transparent 0%, #2c99bb -10%, transparent 80%,     transparent 100%)`
                 }}
                 className='text-[15px] '
               >
@@ -246,7 +246,7 @@ const ProfileCard = () => {
             <div className='flex flex-col 2xl:flex-row text-start 2xl:items-center justify-between  w-full gap-x-2 gap-y-2'>
               <dt
                 style={{
-                  background: `linear-gradient(to right, transparent 0%, transparent 0%, #c084fc -10%, transparent 80%,     transparent 100%)`
+                  background: `linear-gradient(to right, transparent 0%, transparent 0%, #2c99bb -10%, transparent 80%,     transparent 100%)`
                 }}
                 className='text-[15px] '
               >
@@ -261,7 +261,7 @@ const ProfileCard = () => {
             <div className='flex flex-col 2xl:flex-row text-start 2xl:items-center justify-between  w-full gap-x-2 gap-y-2'>
               <dt
                 style={{
-                  background: `linear-gradient(to right, transparent 0%, transparent 0%, #c084fc -10%, transparent 80%,     transparent 100%)`
+                  background: `linear-gradient(to right, transparent 0%, transparent 0%, #2c99bb -10%, transparent 80%,     transparent 100%)`
                 }}
                 className='text-[15px] '
               >

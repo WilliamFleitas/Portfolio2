@@ -11,8 +11,8 @@ const worksData = [
   {
     link: 'fakelink.com',
     miniature:
-      'https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2FMacbook%20(2).png?alt=media&token=26f7501b-af4a-4610-8603-9978a7271bb9',
-    date: 'April 2023 - Present',
+      'https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2FMacbook%20(2)%20(1).png?alt=media&token=ddfd7e0c-f26e-450e-bef5-e3abc2e475bb',
+    date: 'April 2023 - Oct 2024',
     color: 'rgba(11, 57, 65)',
     title: 'Trade Social Network',
     value: 'wallStIntel',
@@ -154,7 +154,7 @@ const Works = ({ type = 'normalView' }: WorksTypeProps) => {
               <span
                 className={`  absolute rounded-b-md top-0  transition duration-500 w-full h-full pointer-events-none ${
                   hovered === index
-                    ? 'bg-opacity-[15%] dark:bg-opacity-[5%]  bg-purple-500'
+                    ? 'bg-opacity-[15%] dark:bg-opacity-[5%]  bg-[#1769843c]'
                     : 'bg-opacity-[0%]'
                 }`}
               ></span>

@@ -58,17 +58,17 @@ const NavBar = () => {
     <nav className="text-start  items-center justify-start flex flex-row w-full text-black dark:text-white bg-white dark:bg-[#131212] xl:dark:bg-[#121212f5] xl:border-b border-zinc-700 overflow-hidden">
       <section className="flex flex-row text-start items-center justify-center py-3 px-6 gap-2 ssm:gap-10 border-r border-zinc-700 w-fit md:min-w-[20rem]">
         <button
-          className="text-primaryMainColor hover:text-primaryMainHoverColor transition duration-500 relative"
+          className="text-primaryMainColor   transition duration-500 relative"
           type="button"
           title={i18n.language === 'en' ? "Language" : 'Idioma' }
           onClick={handleChangeLanguage}
         >
           {<MdOutlineLanguage className="w-6 h-6 " />}
-          <strong className="absolute bottom-0 right-0 font-extrabold  text-purple-500 ">{i18n.language === "en" ? "en" : "es"}</strong>
+          <strong className="absolute bottom-0 right-0 font-extrabold  text-primaryButtonColor ">{i18n.language === "en" ? "en" : "es"}</strong>
         </button>
 
         <button
-          className="text-primaryMainColor hover:text-primaryMainHoverColor transition duration-500"
+          className="text-primaryMainColor hover:text-primaryButtonColor transition duration-500"
           type="button"
           title={theme === "dark" ? "Light":"Dark"}
           onClick={handleThemeSwitch}
@@ -85,10 +85,10 @@ const NavBar = () => {
         {navData?.map((item, index) => (
           <Link
             to={item.link}
-            className={`h-fit w-fit  border hover:text-primaryMainHoverColor hover:border-primaryMainHoverColor flex flex-row text-center items-center justify-center px-2 py-2 gap-0 transition duration-300  rounded-full whitespace-nowrap ${
+            className={`h-fit w-fit  border  flex flex-row text-center items-center justify-center px-2 py-2 gap-0 transition duration-300  rounded-full whitespace-nowrap ${
               currentPath === item.value 
-                ? "gradient-top-line-section-selected border-primaryMainHoverColor text-primaryMainHoverColor"
-                : "gradient-top-line-section  border-zinc-800 text-zinc-500"
+                ? "gradient-top-line-section-selected border-primaryButtonColor text-primaryButtonColor"
+                : "gradient-top-line-section-selected  border-primaryMainHoverColor text-primaryMainHoverColor hover:text-primaryButtonColor hover:border-primaryButtonColor"
             }  `}
             key={index}
             type="button"

@@ -61,7 +61,7 @@ body {
     to right,
     transparent 0%,
     transparent 5%, 
-    #c084fc 50%,
+    #2c99bb 50%,
     transparent 95%, 
     transparent 100%
   );
@@ -71,7 +71,7 @@ body {
     to right,
     transparent 0%,
     transparent 5%, 
-    #4b4a4b 50%,
+    #232325 50%,
     transparent 95%, 
     transparent 100%
   );
@@ -81,7 +81,7 @@ body {
     to right,
     transparent 0%,
     transparent 5%, 
-    #c084fc 50%,
+    #2c99bb 50%,
     transparent 95%, 
     transparent 100%
   );
@@ -102,7 +102,7 @@ body {
     to top,
     transparent 0%,
     transparent 5%, 
-    #c084fc 150%,
+    #2c99bb 150%,
     transparent 95%, 
     transparent 100%
   );
@@ -112,7 +112,7 @@ body {
     to top,
     transparent 0%,
     transparent 5%, 
-    #744a9d 150%,
+    #0b171d 150%,
     transparent 95%, 
     transparent 100%
   );
@@ -122,7 +122,7 @@ body {
     to right,
     transparent 0%,
     transparent 0%, 
-    #c084fc 5%,
+    #2c99bb 5%,
     transparent 55%, 
     transparent 100%
   );
@@ -131,19 +131,19 @@ body {
  
 
 .ppContainerBase {
-  background: -moz-linear-gradient(-45deg,rgba(46,202,127,.15) 0%,rgba(46,202,127,.01) 100%);
-    background: -webkit-linear-gradient(-45deg,rgba(46,202,127,.15) 0%,rgba(46,202,127,.01) 100%);
-    background: linear-gradient(135deg,rgba(46,202,127,.15) 0%,rgba(46,202,127,.01) 100%);
+  background: -moz-linear-gradient(-45deg,rgba(176, 202, 46, 0.15) 0%,rgba(46,202,127,.01) 100%);
+    background: -webkit-linear-gradient(-45deg,rgba(202, 192, 46, 0.15) 0%,rgba(46,202,127,.01) 100%);
+    background: linear-gradient(135deg,rgba(189, 202, 46, 0.15) 0%,rgba(46,202,127,.01) 100%);
 
   
 }
 .ppContainerMid {
-  background: -moz-linear-gradient(-45deg,rgba(226, 70, 246, 0.321) 0%,rgba(246,184,70,.01) 100%);
-  background: -webkit-linear-gradient(-45deg,rgba(246, 70, 243, 0.253) 0%,rgba(246,184,70,.01) 100%); 
-  background: linear-gradient(135deg,rgba(231, 70, 246, 0.211) 0%,rgba(246,184,70,.01) 100%);
+  background: -moz-linear-gradient(-45deg,rgba(95, 199, 230, 0.321) 0%,rgba(246,184,70,.01) 100%);
+  background: -webkit-linear-gradient(-45deg,rgba(95, 199, 230, 0.253) 0%,rgba(246,184,70,.01) 100%); 
+  background: linear-gradient(135deg,rgba(95, 199, 230, 0.211) 0%,rgba(246,184,70,.01) 100%);
 }
 .ppContainerMain {
-  background: -moz-linear-gradient(-45deg,rgba(246, 70, 187, 0.282) 0%,rgba(246,184,70,.01) 100%);
-  background: -webkit-linear-gradient(-45deg,rgba(246, 70, 176, 0.236) 0%,rgba(246,184,70,.01) 100%);
-  background: linear-gradient(135deg,rgba(240, 70, 246, 0.281) 0%,rgba(246,184,70,.01) 100%);
+  background: -moz-linear-gradient(-45deg,rgba(95, 199, 230, 0.282) 0%,rgba(246,184,70,.01) 100%);
+  background: -webkit-linear-gradient(-45deg,rgba(95, 199, 230, 0.236) 0%,rgba(246,184,70,.01) 100%);
+  background: linear-gradient(135deg,rgba(0, 157, 247, 0.296) 0%,rgba(246,184,70,.01) 100%);
 }

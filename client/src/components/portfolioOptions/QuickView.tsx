@@ -90,16 +90,16 @@ const QuickView = () => {
     <div className='w-full h-full flex flex-col text-start items-start justify-start relative bg-white dark:bg-[#171616]'>
       <div className='flex flex-col text-start items-start justify-start   text-black dark:text-white overflow-scroll smd:overflow-hidden w-full h-full smd:h-screen shadow-md  isolate fh:p-5 gap-8 fh:gap-6 no-scrollbar z-50'>
         <div className='flex flex-col smd:grid smd:grid-cols-2 w-full h-fit text-start items-start justify-between gap-8 fh:gap-5  smd:overflow-hidden isolate rounded-xl z-20'>
-          <div className='h-full w-full flex flex-col  smd:overflow-y-scroll smd:overflow-x-hidden no-scrollbar gap-y-8 fh:gap-y-5 relative isolate fh:border-b rounded-xl fh:border-purple-400'>
-            <article className='w-full h-full  text-start items-center justify-start gap-y-5 flex flex-col  z-40 select-none bg-white dark:bg-[#121212f5] pt-8 fh:pt-4 pb-4 px-4 no-scrollbar border-y fh:border-x border-purple-400  fh:rounded-xl isolate mt-8 fh:mt-0'>
+          <div className='h-full w-full flex flex-col  smd:overflow-y-scroll smd:overflow-x-hidden no-scrollbar gap-y-8 fh:gap-y-5 relative isolate fh:border-b rounded-xl fh:border-primaryButtonColor'>
+            <article className='w-full h-full  text-start items-center justify-start gap-y-5 flex flex-col  z-40 select-none bg-white dark:bg-[#121212f5] pt-8 fh:pt-4 pb-4 px-4 no-scrollbar border-y fh:border-x border-primaryButtonColor  fh:rounded-xl isolate mt-8 fh:mt-0'>
               <MyServices type='firstView' />
             </article>
 
-            <article className='w-full h-full smd:h-fit  text-start items-start smd:items-center justify-start gap-y-5 flex flex-col  z-40 select-none bg-white dark:bg-[#121212f5] pt-4 pb-4 px-4 border-y fh:border-x border-purple-400  fh:rounded-xl isolate shadow-sm shadow-black'>
+            <article className='w-full h-full smd:h-fit  text-start items-start smd:items-center justify-start gap-y-5 flex flex-col  z-40 select-none bg-white dark:bg-[#121212f5] pt-4 pb-4 px-4 border-y fh:border-x border-primaryButtonColor  fh:rounded-xl isolate shadow-sm shadow-black'>
               <Experience type='firstView' />
             </article>
           </div>
-          <div className='h-full w-full fh:rounded-xl smd:overfloy-y-scroll smd:overflow-x-hidden isolate no-scrollbar border-y fh:border-x border-purple-400 '>
+          <div className='h-full w-full fh:rounded-xl smd:overfloy-y-scroll smd:overflow-x-hidden isolate no-scrollbar border-y fh:border-x border-primaryButtonColor '>
             <article className='w-full h-fit  text-start items-center justify-start gap-y-4 flex flex-col smd:flex-grow  z-40 select-none bg-white dark:bg-[#121212f5] pt-4 pb-6 smd:pb-2 px-4  smd:overflow-y-hidden overflow-x-hidden fh:rounded-xl isolate no-scrollbar '>
               <div className='flex flex-col w-full h-fit '>
                 <header className='flex  flex-col w-full h-fit'>
@@ -307,7 +307,7 @@ const QuickView = () => {
             </article>
           </div>
         </div>
-        <div className='flex flex-col items-center justify-end w-full h-fit mt-auto z-20 border-y fh:border-x border-purple-400 fh:rounded-xl isolate shadow-sm shadow-black bg-white dark:bg-[#121212f5] mb-8 fh:mb-0'>
+        <div className='flex flex-col items-center justify-end w-full h-fit mt-auto z-20 border-y fh:border-x border-primaryButtonColor fh:rounded-xl isolate shadow-sm shadow-black bg-white dark:bg-[#121212f5] mb-8 fh:mb-0'>
           <Works type='firstView' />
         </div>
       </div>
