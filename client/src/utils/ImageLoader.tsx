@@ -14,7 +14,7 @@ const ImageLoader: React.FC<ImageLoaderTypeProps> = ({ src, alt }) => {
   return (
     <div className=" flex flex-col h-full w-full text-start items-center justify-center">
       {loading ? (
-        <div className="transition duration-500 animate-spin rounded-full h-14 w-14 m-8  border-t-2 border-b-2 border-purple-500"></div>
+        <div className="transition duration-500 animate-spin rounded-full h-14 w-14 m-8  border-t-2 border-b-2 border-primaryButtonColor "></div>
       ): <></>}
       
       <img

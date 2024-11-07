@@ -49,7 +49,7 @@ const ProfileCard = () => {
   return (
     <div
       style={{
-        boxShadow: `0 1px 4px 0 #8A61B1`
+        boxShadow: `0 1px 4px 0 #2c99bb`
       }}
       className=' flex flex-col bg-white dark:bg-black dark:text-white text-black  w-full h-full ssm:h-fit xl:h-full  z-10  shadow-md text-start items-center justify-between xl:justify-start overflow-hidden relative'
     >
@@ -61,7 +61,8 @@ const ProfileCard = () => {
           draggable='false'
         />
       </div>
-
+      <div className=' flex flex-col bg-[#0867874d] z-10 w-full h-full absolute top-0'>
+      </div>
       <div
         className={`absolute inset-x-0 bg-white dark:bg-[#171616] top-0 left-1/2 transform -translate-x-1/2  flex flex-col text-start items-center justify-center  z-50 dark:text-white text-black w-fit hover:min-w-fit hover:min-h-fit hover:rounded-b-md hover:border-2 hover:border-primaryButtonColor hover:border-t-0 `}
         onMouseEnter={() => setCustomNavHover(true)}
