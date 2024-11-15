@@ -29,7 +29,7 @@ const Records = () => {
                 <FaRegFileCode className="w-8 h-8 dark:text-primaryButtonColor  "/>
 
             </div>
-            <strong className="font-bold">1+</strong>
+            <strong className="font-bold">2</strong>
             <strong>{t("yearsExperience")}</strong>
             <span className=" bg-gradient-custom absolute top-0 left-0 h-[100%] w-[1px] flex flex-col items-center justify-center text-center rounded-[10%]"></span>
             <span className=" bg-gradient-custom absolute top-0 right-0 h-[100%] w-[1px] flex flex-col items-center justify-center text-center rounded-[10%]"></span>

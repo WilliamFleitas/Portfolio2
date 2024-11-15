@@ -166,7 +166,7 @@ const ProfileCard = () => {
             <a
               className='hover:text-primaryButtonColor transition duration-700'
               draggable='false'
-              href='https://www.linkedin.com/in/w-oni/'
+              href='https://www.linkedin.com/in/cabrerawilliam/'
               title='Linkedin'
               target='_blank'
             >
@@ -186,8 +186,8 @@ const ProfileCard = () => {
               draggable='false'
               href={
                 i18n.language === 'en'
-                  ? 'https://docs.google.com/document/d/1dZvwhU_T1395QhTI1RkWFEqG0YpkFcOE/edit?usp=sharing&ouid=118393274526664722618&rtpof=true&sd=true'
-                  : 'https://docs.google.com/document/d/1TqkVJvtDbDhZY8cyHhtbPcosETIp8ahQ/edit?usp=sharing&ouid=118393274526664722618&rtpof=true&sd=true'
+                  ? 'https://drive.google.com/file/d/1AZbk3k5Usg0bvD0-WH8G5Eh64xlHx5Nj/view?usp=sharing'
+                  : 'https://drive.google.com/file/d/10USyul0aoVIVsBFVi01VlFe4-0m_b6ih/view?usp=sharing'
               }
               target='_blank'
               title='Download CV'

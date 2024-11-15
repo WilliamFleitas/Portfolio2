@@ -39,8 +39,8 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
         "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2Fwalldemoproy2.mp4?alt=media&token=2ecc5ea1-33b1-42f2-90ad-cccad40e80c6",
       date:
         i18n.language === "en"
-          ? "April 2023 - Oct 2024"
-          : "Abril 2023 - Oct 2024",
+          ? "April 2023 - November 2024"
+          : "Abril 2023 - Noviembre 2024",
       title: "Trade Social Network",
       value: "wallStIntel",
       miniDescription:
@@ -109,8 +109,8 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
       link: "fakelink.com",
       date:
         i18n.language === "en"
-          ? "January 2023 - Present"
-          : "Enero 2023 - Presente",
+          ? "January 2022 - December 2023"
+          : "Enero 2022 - Diciembre 2023",
       state: "Demo",
       miniature:
         "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2FMacbookasd.png?alt=media&token=e395e075-9875-47af-8a7b-6e70754aa812",

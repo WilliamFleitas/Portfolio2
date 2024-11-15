@@ -16,8 +16,8 @@ export const Experience = ({ type = 'normalView' }: ExperienceTypeProps) => {
     {
       date:
         i18n.language === 'en'
-          ? 'April 2023 - Oct 2024'
-          : 'Abril 2023 - Oct 2024',
+          ? 'April 2023 - November 2024'
+          : 'Abril 2023 - Noviembre 2024',
       jobTitle: 'Frontend Web Developer',
       company: 'Wall ST Intel',
       place: 'USA - Florida',
