@@ -253,7 +253,7 @@ const ProfileCard = () => {
               >
                 <strong>Email</strong>
               </dt>
-              <dd>wgiufc@hotmail.com</dd>
+              <dd>wgiufc1@gmail.com</dd>
             </div>
             <span className='hidden 2xl:flex gradient-line-span  w-[100%] flex-col items-center justify-center text-center h-[1px] my-2  rounded-[10%]'></span>
           </div>
