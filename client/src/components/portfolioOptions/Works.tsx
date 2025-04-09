@@ -10,6 +10,18 @@ import { FaBriefcase } from 'react-icons/fa'
 const worksData = [
   {
     link: 'fakelink.com',
+    date: 'February 2025 - April 2025',
+    color: 'rgba(110, 110, 110)',
+    miniature:
+      'https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2FMacbook%20(6)4234.png?alt=media&token=2be60ac3-d1f4-4b1b-81d6-60a15cd6b592',
+    title: 'Translator Desktop APP',
+    company: 'Personal Project',
+    value: 'translator_APP',
+    miniDescription: 'up.',
+    id: 0
+  },
+  {
+    link: 'fakelink.com',
     miniature:
       'https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2FMacbook%20(2)%20(1).png?alt=media&token=ddfd7e0c-f26e-450e-bef5-e3abc2e475bb',
     date: 'April 2023 - Oct 2024',
@@ -18,7 +30,7 @@ const worksData = [
     value: 'wallStIntel',
     miniDescription:
       'Development of a Single Page Application (SPA) for web-based trading, utilizing React library.',
-    id: 0,
+    id: 1,
     company: 'Wall St Intel'
   },
   {
@@ -31,7 +43,7 @@ const worksData = [
     title: 'Dashboard',
     value: 'brunsonInsurance',
     miniDescription: 'up',
-    id: 1
+    id: 2
   },
   {
     link: 'fakelink.com',
@@ -43,7 +55,7 @@ const worksData = [
     color: 'rgba(186, 146, 152)',
     value: 'laCarretaPosada',
     miniDescription: 'up.',
-    id: 2
+    id: 3
   },
   {
     link: 'fakelink.com',
@@ -55,7 +67,7 @@ const worksData = [
     company: 'Personal Project',
     value: 'clockIA_APP',
     miniDescription: 'up.',
-    id: 3
+    id: 4
   }
 ]
 

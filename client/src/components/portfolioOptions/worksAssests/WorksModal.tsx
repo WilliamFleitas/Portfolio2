@@ -23,6 +23,32 @@ interface WorksModalTypeProps {
 const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
   const { t, i18n } = useTranslation(["works"]);
   const worksData: Record<string, workDataType> = {
+    translator_APP: {
+      link: "fakelink.com",
+      date:
+        i18n.language === "en"
+          ? "February 2025 - April 2025"
+          : "Febrero 2025 - Abril 2025",
+      state: "Production",
+      miniature:
+        "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2FMacbook%20(6)4234.png?alt=media&token=2be60ac3-d1f4-4b1b-81d6-60a15cd6b592",
+      video:
+        "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2F2025-04-09%2010-03-24.mp4?alt=media&token=a1f1bb8f-adb9-4daa-b653-1cbd1eb807d9",
+      title: "Translator Desktop APP",
+      color: "rgba(110, 110, 110)",
+      company: "Personal Project",
+      value: "translator_APP",
+      miniDescription:
+        i18n.language === "en"
+          ? "Translator Desktop, created with Electron.js, Typescript and React."
+          : "Aplicación Desktop de traducción, creado con Electron.js, Typescript y React.",
+      description:
+        i18n.language === "en"
+          ? "I developed a language translation application using Electron.js, TypeScript, and React. The application has two versions: one that uses OpenAI's Whisper running locally for audio-to-text transcriptions, and another version that uses the Deepgram library for audio-to-text transcriptions in the cloud. Both versions use Azure AI Translation for text translations, in addition to employing Voicemeeter Banana to create virtual audio devices, which allow capturing audio from the speaker."
+          : "Desarrollé una aplicación de traducción de lenguajes utilizando Electron.js, TypeScript y React. La aplicación cuenta con dos versiones: una en la que se utiliza Whisper de OpenAI, ejecutándose de manera local para las transcripciones de audio a texto, y otra versión que emplea la librería de Deepgram para las transcripciones de audio a texto en la nube. Ambas versiones utilizan Azure AI Translation para las traducciones de texto, además de emplear Voicemeeter Banana para la creación de dispositivos virtuales de audio, lo que permite la captura del audio proveniente del altavoz.",
+      id: 0,
+      jobTitle: "Full Stack Developer",
+    },
     wallStIntel: {
       link: "fakelink.com",
       state: "Seed",
@@ -51,7 +77,7 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
         i18n.language === "en"
           ? "Developed React interfaces with TypeScript and Tailwind, integrating Asynchronous Redux Toolkit for robust state management. Implemented charts and tables to provide users with an intuitive and visually appealing representation of the data. Implemented List virtualization for efficient rendering of large data sets, resulting in a 15% performance enhancement for components utilizing lists. Collaboratively worked with the backend team to design data structures, ensuring seamless integration with the frontend and efficient data management. Designed scalable code architecture through reusable components for enhanced efficiency."
           : "Desarrollé interfaces en React con TypeScript y Tailwind, integrando Asynchronous Redux Toolkit para una gestión robusta del estado. Implementé Gráficos y tablas para proporcionar a los usuarios una representación intuitiva y visualmente atractiva de la data. Implemente la virtualización de listas para mejorar la eficiencia del renderizado de grandes conjuntos de datos, lo que resulto en una mejora del rendimiento en un 15%. Trabajé en colaboración con el equipo de backend para diseñar estructuras de datos, asegurando una integración fluida con el frontend y una gestión eficiente de los datos. Diseñé e implementé una arquitectura de código escalable y eficiente mediante la creación de componentes reutilizables, mejorando la eficiencia y escalabilidad del código..",
-      id: 0,
+      id: 1,
       company: "Wall St Intel",
       jobTitle: "Frontend Developer",
     },
@@ -76,7 +102,7 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
         i18n.language === "en"
           ? "Revamped the client website through extensive refactoring, optimizing code for efficiency by eliminating unnecessary components and upgrading libraries. Achieved a streamlined and cleaner codebase, leading to reduced loading times and improved maintainability and scalability. Implemented a migration of global application states to Redux Toolkit, enhancing code readability and delivering a notable 30% speed improvement for relevant components. Further upgraded the website's styling by replacing Bootstrap with Tailwind, ensuring a modern and controlled design while preserving the original appearance of components."
           : "Refactorización completa del panel administrativo de uno de los productos del cliente, optimizando el código para mejorar la eficiencia al eliminar componentes innecesarios y actualizar bibliotecas. Logré una base de código más limpia y eficiente, lo que resultó en tiempos de carga reducidos y una mejor mantenibilidad y escalabilidad. Implementé la migración de estados de aplicación globales a Redux Toolkit, mejorando la legibilidad del código y logrando una mejora de velocidad notable del 30% para los componentes relevantes. Además, actualicé el estilo del sitio web al reemplazar Bootstrap con Tailwind, garantizando un diseño moderno y controlado mientras se conserva la apariencia original de los componentes.",
-      id: 1,
+      id: 2,
       jobTitle: "Frontend Developer",
     },
     laCarretaPosada: {
@@ -102,7 +128,7 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
         i18n.language === "en"
           ? "Led the development of a landing page web application, implementing a room reservation system with integrated quotes, a secure payment gateway, SQL database management, enhanced security, and seamless deployment. This achievement resulted in an 80% automation rate for the hotel's reservation system."
           : "Dirigí el desarrollo de una aplicación web tipo landing page y un sistema de reservas de habitaciones con cotizaciones integradas, una pasarela de pago segura, gestión de base de datos SQL, seguridad mejorada y despliegue sin problemas. Este logro resultó en una tasa de automatización del 80% para el sistema de reservas del hotel.",
-      id: 2,
+      id: 3,
       jobTitle: "Full Stack Developer",
     },
     clockIA_APP: {
@@ -134,7 +160,7 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
         i18n.language === "en"
           ? "Alarm Clock APP using the PERN Stack and Typescript, incorporating Node-cron for alarm and task management. Leveraged Socket.IO for seamless event handling and real-time information transmission. Enhanced user interactivity with personalized responses generated through Openai API and real-time conversion to audiovisual content using the D-ID AI API."
           : "Desarrollé una aplicación de despertador utilizando el stack PERN y Typescript, incorporando Node-cron para la gestión de alarmas y tareas. Aproveché Socket.IO para un manejo de eventos fluido y la transmisión de información en tiempo real. Mejoré la interactividad del usuario con respuestas personalizadas generadas a través de la API de OpenAI y la conversión en tiempo real a contenido audiovisual utilizando la API de D-ID AI.",
-      id: 3,
+      id: 4,
       jobTitle: "Full Stack Developer",
     },
   };
