@@ -32,6 +32,10 @@ const WorksModal: React.FC<WorksModalTypeProps> = ({ workName }) => {
       state: "Production",
       miniature:
         "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2FMacbook%20(6)4234.png?alt=media&token=2be60ac3-d1f4-4b1b-81d6-60a15cd6b592",
+        images: [
+          "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2Ftranslatorapp%2FCaptura%20de%20pantalla%202025-04-09%20104832.png?alt=media&token=9893336e-35f3-4aea-b959-1f5b38d22cff",
+          "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2Ftranslatorapp%2FCaptura%20de%20pantalla%202025-04-09%20115340.png?alt=media&token=cf045594-3c31-4c48-9c83-4bf6db30b2e0"
+        ],
       video:
         "https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2F2025-04-09%2010-03-24.mp4?alt=media&token=a1f1bb8f-adb9-4daa-b653-1cbd1eb807d9",
       title: "Translator Desktop APP",
