@@ -32,7 +32,7 @@ const Skills = () => {
                 <small>React</small>
                 <small>NextJs</small>
                 <small>Tailwind</small>
-                <small>React Native</small>
+                <small>Electron.js</small>
                 <small>Redux Toolkit</small>
               </div>
             </section>

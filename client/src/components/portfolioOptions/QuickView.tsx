@@ -24,8 +24,12 @@ const skillsData = {
         value: 60
       },
       {
+        label: 'Electron.js',
+        value: 50
+      },
+      {
         label: 'React Native',
-        value: 40
+        value: 35
       },
       {
         label: 'NextJs',
