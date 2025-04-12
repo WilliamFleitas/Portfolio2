@@ -54,7 +54,7 @@ const Skills = () => {
             <strong className="">{t("languages")}</strong>
         </div>
         <div className="flex flex-row flex-wrap w-full text-start items-center justify-center gap-2  py-2  px-4 border-b border-primaryMainColor">
-            <small>English(C1 Advanced) /</small>
+            <small>English(B2 Upper intermediate) /</small>
             <small>Spanish(Native) /</small>
             <small>Guarani(Native) /</small>
             <small>Portuguese(Basic)</small>

@@ -123,7 +123,7 @@ const QuickView = () => {
                   </div>
                   <div className='grid grid-cols-2 w-full text-start items-center justify-between gap-y-4 gap-x-6'>
                     <small className='py-2 flex flex-grow text-center items-center justify-center border border-primaryMainColor  rounded-md font-bold'>
-                      English(C1 Advanced)
+                      English(B2 Upper intermediate)
                     </small>
                     <small className='py-2 flex flex-grow text-center items-center justify-center border border-primaryMainColor  rounded-md font-bold'>
                       Spanish(Native)
