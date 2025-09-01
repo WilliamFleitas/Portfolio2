@@ -10,14 +10,17 @@ export default {
         'lekton': ['Lekton', 'sans-serif'],
       },
       colors: {
-        primaryMainColor: "#4b4a4b",
+        primaryMainColor: "#1e2122",
         primaryMainHoverColor: "#0F2028",
         primaryBgColor: "#313031",
         secondaryBgColor: "#121212f5",
-        primaryButtonColor: "#2c99bb"
+        primaryButtonColor: "#19191a",
+        gradientBorder: "#112533",
+        primaryBorderColor: "#9c9c9c",
+        secondaryBorderColor: "#585858",
       },
       backgroundImage: {
-        'gradient-custom': "linear-gradient(to bottom, transparent 0%, transparent 0%, #4b4a4b 0%, transparent 90%, transparent 100%)",
+        'gradient-custom': "linear-gradient(to bottom, transparent 0%, transparent 0%, #9c9c9c 0%, transparent 90%, transparent 100%)",
       },
     },
     screens: {

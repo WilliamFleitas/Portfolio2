@@ -30,7 +30,7 @@ export default function Modal ({ Content, isOpen, onClose, color }: ModalProps) 
         onClose={onClose}
       >
         <div className={`fixed inset-0 z-10 w-full h-full overflow-y-auto   ${quickView ? "": "sm:pb-14 xl:pb-0"}`}>
-          <div className='flex flex-col w-full h-full  items-center justify-center  text-start   md:p-4 rounded-md'>
+          <div className='flex flex-col w-full h-full  items-center justify-center  text-start   md:p-4 bg-[#3d3d3d54]'>
             <Transition.Child
               as={Fragment}
               enter='ease-out duration-300'

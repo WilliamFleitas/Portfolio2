@@ -1,11 +1,9 @@
-
 import Marquee from 'react-fast-marquee'
 import Skills from './resumeAssests/Skills'
 import { useTranslation } from 'react-i18next'
 import { ViewOptionsType } from '../../globalTypes/globalTypes'
 import { TYPE_VIEW_OPTIONS } from '../../globalVariables/globalVariables'
-import { FaBriefcaseMedical } from "react-icons/fa6";
-
+import { FaBriefcaseMedical } from 'react-icons/fa6'
 
 interface ExperienceTypeProps {
   type?: ViewOptionsType
@@ -100,18 +98,28 @@ export const Experience = ({ type = 'normalView' }: ExperienceTypeProps) => {
     <div className=' flex flex-col text-start items-center justify-start w-full h-full smd:h-fit'>
       <div
         className={`flex  flex-row text-start items-center justify-start  w-full   ${
-          type === TYPE_VIEW_OPTIONS.normalView ? ' px-4  py-4 h-full' : 'h-full smd:h-fit'
+          type === TYPE_VIEW_OPTIONS.normalView
+            ? ' px-4  py-4 h-full'
+            : 'h-full smd:h-fit'
         }`}
       >
         <label className='flex flex-row text-start items-start justify-start  font-bold text-[25px] h-fit w-full gradient-title-line gap-2'>
           <FaBriefcaseMedical className='w-6 h-6 dark:text-white ' />
-          <span className=' '> {t('experience')}</span>
+          <span
+            className=' '
+            style={{
+              textShadow: '-2px 5px 4px #0000008c'
+            }}
+          >
+            {' '}
+            {t('experience')}
+          </span>
         </label>
       </div>
       <div
         className={`relative  w-full h-fit sm:h-full  text-start items-start justify-start  ${
           type === TYPE_VIEW_OPTIONS.normalView
-            ? ' border-t border-primaryMainColor flex flex-col sm:grid sm:grid-cols-2'
+            ? ' border-t border-primaryBorderColor dark:border-secondaryBorderColor flex flex-col sm:grid sm:grid-cols-2'
             : 'grid grid-cols-1'
         } `}
       >
@@ -128,12 +136,22 @@ export const Experience = ({ type = 'normalView' }: ExperienceTypeProps) => {
               <label className='font-bold text-clip max-w-[130px] min-w-[130px]'>
                 {item.jobTitle}
               </label>
-              <small className='font-bold px-2 pt-1  shadow-md  border border-primaryButtonColor  w-fit whitespace-nowrap rounded-md text-primaryButtonColor'>
+              <small
+                className='px-2 pt-1  shadow-md  border-2 border-primaryButtonColor  w-fit whitespace-nowrap rounded-md text-primaryButtonColor text-[0.8rem] font-extrabold '
+                style={{
+                  textShadow: '-2px 2px 8px #0000008c'
+                }}
+              >
                 {item.date}
               </small>
             </div>
             <div className='flex flex-row flex-wrap w-full  text-center items-start justify-between  h-fit sm:h-full'>
-              <strong className='font-extrabold flex flex-row text-start text-zinc-600 text-[15px] font-sans'>
+              <strong
+                className='font-extrabold flex flex-row text-start text-[#1e2122] text-[15px] font-sans'
+                style={{
+                  textShadow: '-2px 2px 4px #0000008c'
+                }}
+              >
                 {item.company}
               </strong>
               <small className='flex text-end items-end justify-end flex-col pt-1'>
@@ -164,7 +182,7 @@ export const Experience = ({ type = 'normalView' }: ExperienceTypeProps) => {
           </div>
         ))}
         {type === TYPE_VIEW_OPTIONS.normalView ? (
-          <span className='hidden  bg-gradient-custom absolute top-0 left-[50%] h-[50%] w-[1px] sm:flex flex-col items-center justify-center text-center rounded-[10%]'></span>
+          <span className='hidden  vertical-gradient-line absolute top-0 left-[50%] h-[50%] w-[1px] sm:flex flex-col items-center justify-center text-center rounded-[10%]'></span>
         ) : (
           <></>
         )}
@@ -176,10 +194,10 @@ const Resume = () => {
   const { t } = useTranslation(['resume'])
 
   return (
-    <div className='flex flex-col text-start items-center justify-center bg-white dark:bg-secondaryBgColor text-black dark:text-white overflow-hidden w-full h-full shadow-md  isolate  py-0 pt-3 lg:pt-0 select-none'>
+    <div className='flex flex-col text-start items-center justify-center  text-black dark:text-white overflow-hidden w-full h-full shadow-md  isolate  py-0 pt-3 lg:pt-0 select-none'>
       <article className='  w-full h-full flex flex-col text-start  items-start justify-start  max-h-[95%] overflow-y-scroll pb-10 no-scrollbar'>
         <div className='flex flex-col w-full h-fit'>
-          <header className='flex  flex-col w-full h-fit border-b border-primaryMainColor px-4 pb-4 pt-2 '>
+          <header className='flex  flex-col w-full h-fit border-b border-primaryBorderColor dark:border-secondaryBorderColor px-4 pb-4 pt-2 '>
             <h2 className='gradient-title-line m-0 text-[25px] font-bold'>
               {t('resume')}
             </h2>

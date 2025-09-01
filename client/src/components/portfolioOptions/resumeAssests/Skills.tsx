@@ -11,9 +11,9 @@ const Skills = () => {
           <span className=" ">{t("skills")}</span>
         </label>
       </div>
-      <div className=" relative flex flex-row flex-wrap w-full h-full  text-start items-start justify-start  border-t border-primaryMainColor ">
+      <div className=" relative flex flex-row flex-wrap w-full h-full  text-start items-start justify-start  border-t border-primaryBorderColor dark:border-secondaryBorderColor ">
         <div className="flex flex-col text-start items-center justify-start w-full px-4 ">
-          <div className="flex flex-row text-center items-center justify-center sm:px-8  py-2  gap-4  border-b border-primaryMainColor">
+          <div className="flex flex-row text-center items-center justify-center sm:px-8  py-2  gap-4  border-b border-primaryBorderColor dark:border-secondaryBorderColor">
             <strong>{t("programmingLanguages")}</strong>
           </div>
           <div className="flex flex-row text-start items-center justify-between  py-2  gap-4  ">
@@ -22,9 +22,9 @@ const Skills = () => {
             <strong>TYPESCRIPT</strong>
           </div>
 
-          <div className="border-t border-primaryMainColor flex flex-row w-full h-full text-center items-center justify-between py-2">
+          <div className="border-t border-primaryBorderColor dark:border-secondaryBorderColor flex flex-row w-full h-full text-center items-center justify-between py-2">
             <section className=" flex flex-col w-full text-start items-center justify-start ">
-              <div className="flex flex-col w-fit min-w-[70%] text-center items-center justify-center py-1 border-b border-primaryMainColor font-bold">
+              <div className="flex flex-col w-fit min-w-[70%] text-center items-center justify-center py-1 border-b border-primaryBorderColor dark:border-secondaryBorderColor font-bold">
                 <label>FRONTEND</label>
               </div>
               <div className="flex flex-col w-full text-center items-center justify-center text-[18px]  py-2 gap-1">
@@ -37,7 +37,7 @@ const Skills = () => {
               </div>
             </section>
             <section className=" flex flex-col w-full text-start items-center justify-start ">
-              <div className="flex flex-col w-fit min-w-[70%] text-center items-center justify-center py-1 border-b border-primaryMainColor font-bold">
+              <div className="flex flex-col w-fit min-w-[70%] text-center items-center justify-center py-1 border-b border-primaryBorderColor dark:border-secondaryBorderColor font-bold">
                 <label>BACKEND</label>
               </div>
               <div className="flex flex-col w-full text-center items-center justify-center  py-2 text-[18px] gap-1">
@@ -50,19 +50,19 @@ const Skills = () => {
               </div>
             </section>
           </div>
-          <div className="flex flex-row text-start items-center justify-center px-8  py-2  gap-4  border-b border-primaryMainColor ">
+          <div className="flex flex-row text-start items-center justify-center px-8  py-2  gap-4  border-b border-primaryBorderColor dark:border-secondaryBorderColor">
             <strong className="">{t("languages")}</strong>
         </div>
-        <div className="flex flex-row flex-wrap w-full text-start items-center justify-center gap-2  py-2  px-4 border-b border-primaryMainColor">
+        <div className="flex flex-row flex-wrap w-full text-start items-center justify-center gap-2  py-2  px-4 border-b border-primaryBorderColor dark:border-secondaryBorderColor">
             <small>English(B2 Upper intermediate) /</small>
             <small>Spanish(Native) /</small>
             <small>Guarani(Native) /</small>
             <small>Portuguese(Basic)</small>
         </div>
-        <div className="flex flex-row text-start items-center justify-center px-8  py-2  gap-4  border-b border-primaryMainColor ">
+        <div className="flex flex-row text-start items-center justify-center px-8  py-2  gap-4  border-b border-primaryBorderColor dark:border-secondaryBorderColor ">
             <strong className="">{t("others")}</strong>
         </div>
-        <div className="flex flex-row flex-wrap w-full text-start items-center justify-center gap-2  border-b border-primaryMainColor py-2  px-4 ">
+        <div className="flex flex-row flex-wrap w-full text-start items-center justify-center gap-2  border-b border-primaryBorderColor dark:border-secondaryBorderColor py-2  px-4 ">
             <small>Git /</small>
             <small>GitHub /</small>
             <small>BitBucket /</small>

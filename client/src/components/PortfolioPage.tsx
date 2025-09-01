@@ -11,7 +11,6 @@ const PortfolioLayout = () => {
   const location = useLocation()
   const [quickView, setQuickView] = useState<boolean>(false)
 
-  
   useEffect(() => {
     const currentLocation = location.pathname.split('/')
     if (currentLocation.length === 2 || currentLocation[2] === 'quickview') {
@@ -21,25 +20,28 @@ const PortfolioLayout = () => {
     }
   }, [location.pathname])
   return (
-    <div className={`relative flex flex-col xl:flex-row w-full   text-start items-center justify-start smd:overflow-y-scroll xl:overflow-hidden no-scrollbar ${quickView === false ? "smd:h-screen":"h-fit smd:h-screen"}`}>
-      <aside className='relative flex flex-row w-full h-fit xl:h-screen xl:min-w-[33%] xl:max-w-[33%]'>
+    <div
+      className={`relative flex flex-col xl:flex-row w-full   text-start items-center justify-start smd:overflow-y-scroll xl:overflow-hidden no-scrollbar ${
+        quickView === false ? 'smd:h-screen' : 'h-fit smd:h-screen'
+      }`}
+    >
+      <aside className='relative p-5 flex flex-row w-full h-fit xl:h-screen xl:min-w-[33%] xl:max-w-[33%]'>
         <ProfileCard />
       </aside>
-      <div
-        className=' flex flex-col w-full h-full'
-        style={{
-          boxShadow: `1px 1px 4px 0 #8A61B1`
-        }}
-      >
+      <div className={` flex flex-col w-full h-full  ${quickView === false ? "pb-0 xl:pb-5 py-5 xl:pr-5":""}`}>
         {quickView === false ? (
-          <div className='h-fit m-0 p-0 hidden xl:flex'>
+          <div className='h-fit m-0 p-0 hidden xl:flex '>
             <NavBar />
           </div>
         ) : (
           <></>
         )}
 
-        <div className='w-full h-full overflow-hidden isolate bg-white dark:bg-[#171616] '>
+        <div
+          className={`w-full h-full overflow-hidden isolate ${
+            quickView === false ? 'xl:rounded-b-md secondary-gradient-color-mirror' : ''
+          }`}
+        >
           <Suspense
             fallback={
               <div className='min-h-screen  md:min-h-full h-full flex flex-col text-start items-center justify-center'>
