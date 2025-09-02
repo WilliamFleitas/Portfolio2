@@ -21,7 +21,7 @@ const ProfileCard = () => {
   const [contactSwitch, setContactSwitch] = useState<boolean>(false)
   const [customNavHover, setCustomNavHover] = useState<boolean>(false)
   const [quickView, setQuickView] = useState<boolean>(false)
-  const [theme, setTheme] = useState<string>('dark')
+  const [theme, setTheme] = useState<string>('light')
   const handleThemeSwitch = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
   }

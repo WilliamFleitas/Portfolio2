@@ -13,7 +13,7 @@ const PortfolioLayout = () => {
 
   useEffect(() => {
     const currentLocation = location.pathname.split('/')
-    if (currentLocation.length === 2 || currentLocation[2] === 'quickview') {
+    if (currentLocation.length === 3 && currentLocation[2] === 'quickview') {
       setQuickView(true)
     } else {
       setQuickView(false)
@@ -67,7 +67,7 @@ const PortfolioLayout = () => {
 const PortfolioPage = () => (
   <Routes>
     <Route element={<PortfolioLayout />}>
-      <Route index element={<QuickView />} />
+      <Route index element={<AboutMe />} />
       <Route path='/aboutme' element={<AboutMe />} />
       <Route path='/resume' element={<Resume />} />
       <Route path='/works' element={<Works />} />

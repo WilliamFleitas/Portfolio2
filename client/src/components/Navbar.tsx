@@ -15,7 +15,7 @@ const NavBar = () => {
   const location = useLocation()
   const path = location.pathname.split('/').splice(2)
   const [currentPath, setCurrentPath] = useState<string>('aboutme')
-  const [theme, setTheme] = useState<string>('dark')
+  const [theme, setTheme] = useState<string>('light')
   const { i18n } = useTranslation()
   const navData = [
     {
