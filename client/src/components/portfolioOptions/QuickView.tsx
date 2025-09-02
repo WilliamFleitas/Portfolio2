@@ -2,7 +2,6 @@ import { useTranslation } from 'react-i18next'
 import { Experience } from './Resume'
 import Works from './Works'
 import MyServices from './aboutMeAssests/MyServices'
-import PortfoBackground from '../PortfoBackground'
 import { GiSkills } from 'react-icons/gi'
 import '../../index.css'
 
