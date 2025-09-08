@@ -1,10 +1,10 @@
 import { FaRegIdCard } from 'react-icons/fa'
-import MeuProfile from '../assets/meuProfile.png'
+import MeuProfile from '../assets/meuProfile.webp'
 import { VscGithub } from 'react-icons/vsc'
 import { FaLinkedinIn } from 'react-icons/fa'
 import TypeWriter from '../utils/TypeWriter'
 import { useTranslation } from 'react-i18next'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import {
   MdOutlineLanguage,
   MdDarkMode,
@@ -14,14 +14,22 @@ import { MdOutlineContactPhone } from 'react-icons/md'
 import { IoPersonSharp } from 'react-icons/io5'
 import { TiArrowSortedDown } from 'react-icons/ti'
 import { Link, useLocation } from 'react-router-dom'
+import useInteractionMode from '../utils/useInteractionMode'
 
 const ProfileCard = () => {
+  const menuRef = useRef<HTMLDivElement>(null)
+
   const { t, i18n } = useTranslation(['contact'])
   const location = useLocation()
   const [contactSwitch, setContactSwitch] = useState<boolean>(false)
-  const [customNavHover, setCustomNavHover] = useState<boolean>(false)
   const [quickView, setQuickView] = useState<boolean>(false)
   const [theme, setTheme] = useState<string>('light')
+
+  const [customNavHover, setCustomNavHover] = useState<boolean>(false)
+  const [customNavClick, setCustomNavClick] = useState(false)
+  const interactionMode = useInteractionMode()
+  const isTouch = interactionMode === 'touch'
+
   const handleThemeSwitch = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
   }
@@ -30,6 +38,43 @@ const ProfileCard = () => {
     i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en')
   }
 
+  const handleMenuToggle = () => {
+    if (isTouch) {
+      setCustomNavClick(!customNavClick)
+    }
+  }
+
+  const handleOutsideClick = (e: MouseEvent | TouchEvent) => {
+    if (
+      isTouch &&
+      customNavClick &&
+      menuRef.current &&
+      !menuRef.current.contains(e.target as Node)
+    ) {
+      setCustomNavClick(false)
+    }
+  }
+  const isMenuVisible = isTouch ? customNavClick : customNavHover
+  useEffect(() => {
+    if (isTouch && customNavClick) {
+      const handleClickOutside = (e: MouseEvent | TouchEvent) => {
+        handleOutsideClick(e)
+      }
+
+      document.addEventListener('mousedown', handleClickOutside)
+      document.addEventListener('touchstart', handleClickOutside)
+
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside)
+        document.removeEventListener('touchstart', handleClickOutside)
+      }
+    }
+  }, [isTouch, customNavClick])
+  useEffect(() => {
+    if (isTouch && customNavClick) {
+      setCustomNavClick(false)
+    }
+  }, [location.pathname])
   useEffect(() => {
     const currentLocation = location.pathname.split('/')
     if (currentLocation.length === 2 || currentLocation[2] === 'quickview') {
@@ -67,14 +112,23 @@ const ProfileCard = () => {
       >
         {' '}
         <div
-          className={`absolute inset-x-0 bottom-0 left-1/2 transform -translate-x-1/2  flex flex-col text-start items-center justify-center  z-50 w-fit hover:min-w-fit hover:min-h-fit `}
+          ref={menuRef}
+          className={`absolute inset-x-0 bottom-0 left-1/2 transform -translate-x-1/2  flex flex-col text-start items-center justify-center  z-50 w-fit hover:min-w-fit hover:min-h-fit ${
+            isTouch ? 'cursor-pointer' : ''
+          }`}
           style={{
             boxShadow: 'inset 2px 10px 15px #0000008c'
           }}
-          onMouseEnter={() => setCustomNavHover(true)}
-          onMouseLeave={() => setCustomNavHover(false)}
+          {...(!isTouch && {
+            onMouseEnter: () => setCustomNavHover(true),
+            onMouseLeave: () => setCustomNavHover(false)
+          })}
+          {...(isTouch && {
+            onClick: handleMenuToggle,
+            tabIndex: 0
+          })}
         >
-          {!customNavHover ? (
+          {!isMenuVisible ? (
             <div
               className='absolute top-0 border border-t-0 border-primaryButtonColor/20 w-14 h-5 rounded-b-md flex flex-col text-center items-center justify-center z-50 bg-gradient-to-r from-[#16222abe] to-[#ffffff6e] dark:bg-gradient-to-r dark:from-[#16222ac4] dark:to-[#3a6073a4] xl:bg-gradient-to-r xl:from-[#16222a00] xl:to-[#ffffff00] xl:dark:bg-gradient-to-r xl:dark:from-[#16222a00] xl:dark:to-[#3a607300] bg-transparent'
               style={{
@@ -153,6 +207,7 @@ const ProfileCard = () => {
                 className='flex object-cover w-full h-full rounded-full flex-col max-w-[10rem] max-h-[10rem]'
                 src={MeuProfile}
                 alt='William Cabrera Profile'
+                loading="lazy"
                 draggable='false'
                 style={{
                   boxShadow: '2px 10px 15px #0000008c'
