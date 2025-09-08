@@ -50,7 +50,7 @@ const worksData = [
     date: 'April 2023 - May 2023',
     miniature:
       'https://firebasestorage.googleapis.com/v0/b/assets-870ea.appspot.com/o/portfolio2%2FMacbook%20(6).png?alt=media&token=c7396ddf-f26e-4341-8f51-e086fc1c5c6d',
-    title: 'Landing Page / Booking system',
+    title: 'Booking system',
     company: 'La Carreta Posada',
     color: 'rgba(186, 146, 152)',
     value: 'laCarretaPosada',
